@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login or join</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article class="art-login">
+        <header class="head-login">
+            <h2 class="txt-title">로그인 또는 회원가입</h2>
+            <button class="btn-close"></button>
+        </header>
+
+        <form action="post" class="form-login">
+            <p class="txt-login">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+            <input class="input-id" type="text" placeholder="아이디" required><br>
+            <input class="input-pw" type="password" placeholder="비밀번호" required>
+
+            <div class="remain">
+                <img class="img-remain" src="images/check-box.png" alt="로그인상태유지">
+                <p class="txt-remain">로그인 상태 유지</p>
+            </div>
+            
+            <button type="submit" class="btn-login">로그인</button>
+
+            <div class="link-help">
+                <a href="#none">회원가입</a>
+                <a class="find-idpw" href="#none">아이디/비밀번호 찾기</a>
+            </div>
+
+            <span class="txt-or">또는</span>
+            <a class="btn-google" href="#none">구글 계정으로 로그인</a>
+            <a class="btn-facebook" href="#none">페이스북 계정으로 로그인</a>
+            <a class="btn-naver" href="#none">네이버 계정으로 로그인</a>
+            <a class="btn-kakao" href="#none">카카오톡 계정으로 로그인</a>
+        </form>
+    </article>
+</body>
+</html>
