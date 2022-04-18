@@ -26,6 +26,7 @@ article.art-login{
 
 .head-login{
     border-bottom: 1px solid #C4C4C4;;
+    text-align: center;
 }
 
 .head-login .txt-title{
@@ -34,7 +35,6 @@ article.art-login{
     font-weight: 500;
     line-height: 20px;
     color: #000000;
-    text-align: center;
     margin: 20px auto 18px;
 }
 
