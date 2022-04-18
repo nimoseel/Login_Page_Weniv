@@ -75,6 +75,9 @@ article.art-login{
     background-color: #FFFFFF;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
+}
+
+.form-login .input-id{
     margin-bottom: 10px;
 }
 
@@ -82,30 +85,35 @@ article.art-login{
     padding-left: 16px;
 }
 
-/* div.remain design */
-div.remain{
-    display: flex;
+/* hold design */
+.label-hold{
+    display: inline-block;
+    height: 22px;
+    margin: 16px 0 20px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
 }
 
-.remain .img-remain{
-    margin: 6px 8px 0 4px;
+.label-hold::before{
+    display: inline-block;
+    content: "";
     width: 22px;
     height: 22px;
+    margin-right: 8px;
+    vertical-align: -5px;
+    background-image: url("images/check-box.png");
 }
 
-.remain .txt-remain{
-    display: flex;
-    width: 111px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    align-items: flex-end;
+.inp-hold:checked + .label-hold::before{
+    background-image: url("images/check-box-blue.png");
 }
 
 /* button.btn-login design */
 button.btn-login{
     width: 100%;
-    /* height: 50px; */
     font-size: 18px;
     font-weight: 700;
     line-height: 50px;
@@ -113,8 +121,8 @@ button.btn-login{
     border: none;
     border-radius: 5px;
     background-color: #2F80ED;
-    margin-top: 20px;
     padding: 0;
+    cursor: pointer;
 }
 
 /* div.link-help */
@@ -132,7 +140,7 @@ div.link-help{
 .link-help .find-idpw::before{
     display: block;
     float: left;
-    content: '';
+    content: "";
     width: 1px;
     height: 14px;
     background-color: #767676;
@@ -151,7 +159,7 @@ div.link-help{
 }
 
 .txt-or::before, .txt-or::after{
-    content: '';
+    content: "";
     flex-grow: 1;
     height: 1px;
     background-color: #C4C4C4;
