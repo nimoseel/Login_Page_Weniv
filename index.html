@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="reset.css">
     <style>
         *{
             font-family:'SpoqaHanSansNeo', "sans-serif";
@@ -24,7 +25,6 @@
         .login-box{
             box-sizing: border-box;
             width: 500px;
-            height: 240px;
             padding: 30px;
             margin: 200px auto;
             border: 1px solid #C4C4C4;
@@ -32,44 +32,43 @@
             background-color: #FFFFFF;
         }
 
-        .logo-img{
+        .img-logo{
+            width: 138px;
+            height: 40px;
             display: block;
             margin: 0 auto;
         }
 
-        .login-txt{
-            display: block;
+        .txt-login{
             text-align: center;
-            margin-top: 28px;
+            margin: 28px 0 32px;
             font-size: 16px;
             line-height: 20px;
             font-weight: 400;
             color: #000000;
         }
 
-        .login-btn{
+        .btn-login{
             display: block;
+            text-align: center;
             box-sizing: border-box;
-            width: 440px;
-            height: 60px;
-            margin-top: 32px;
-            padding: 17px 189px 18px 190px;
-            text-decoration: none;
+            width: 100%;
             font-size:22px;
-            line-height: 28px;
+            line-height: 60px;
             font-weight: 700;
             color: #FFFFFF;
+            text-decoration: none;
             border-radius: 5px;
             background-color: #2F80ED;
         }
-
     </style>
 </head>
+    
 <body>
     <article class="login-box">
-        <img class="logo-img" src="images/weniv-logo.png" alt="위니브">
-        <h2 class="login-txt">위니브를 더 즐겁고 편리하게 이용하세요.</h2>
-        <a class="login-btn" href="modal.html">
+        <img class="img-logo" src="images/weniv-logo.png" alt="위니브">
+        <h2 class="txt-login">위니브를 더 즐겁고 편리하게 이용하세요.</h2>
+        <a class="btn-login" href="modal.html">
             로그인
         </a>
     </article>
