@@ -22,11 +22,13 @@ article.art-login{
     border-radius: 10px;
     background-color: #FFFFFF;
     margin: 20px auto;
+
 }
 
 .head-login{
     border-bottom: 1px solid #C4C4C4;;
     text-align: center;
+
 }
 
 .head-login .txt-title{
@@ -105,10 +107,12 @@ article.art-login{
     margin-right: 8px;
     vertical-align: -5px;
     background-image: url("images/check-box.png");
+    background-size: cover;
 }
 
 .inp-hold:checked + .label-hold::before{
     background-image: url("images/check-box-blue.png");
+    background-size: cover;
 }
 
 /* button.btn-login design */
@@ -185,10 +189,13 @@ a[class^="btn"]::before{
     width: 28px;
     height: 28px;
     margin: 11px 0 11px 12px;
+    display: block;
+    background-image: url(images/css_sprites.png);
+    background-size: 76px 76px;
 }
 
 a.btn-google::before{
-    background: url(images/css_sprites.png) -10px -10px;
+    background-position: -5px -5px;
 }
 
 a.btn-facebook{
@@ -196,7 +203,7 @@ a.btn-facebook{
 }
 
 a.btn-facebook::before{
-    background: url(images/css_sprites.png) -58px -10px;
+    background-position: -43px -5px;
 }
 
 a.btn-naver{
@@ -204,7 +211,7 @@ a.btn-naver{
 }
 
 a.btn-naver::before{
-    background: url(images/css_sprites.png) -10px -58px;
+    background-position: -5px -43px;
 }
 
 a.btn-kakao{
@@ -212,5 +219,5 @@ a.btn-kakao{
 }
 
 a.btn-kakao::before{
-    background: url(images/css_sprites.png) -58px -58px;
+    background-position: -43px -43px;
 }
